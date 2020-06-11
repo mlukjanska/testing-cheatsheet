@@ -42,7 +42,7 @@
 
 Collection of useful scripts:
 
-- [Python script to compare CSV files for differences](https://github.com/mlukjanska/testing-cheatsheet/Scripts/compareCSV.py)
+- [compareCSV.py](compareCSV.py) - Python script to compare CSV files for differences
 
 ## Blogs
 
