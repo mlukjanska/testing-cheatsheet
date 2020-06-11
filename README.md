@@ -49,6 +49,8 @@ Collection of useful scripts:
 
 ### CircleCI
 
+- [Cheatsheet for the config.yml](CircleCI/README.md)
+
 ### Github
 
 - [Multiple github accounts on Mac](https://medium.com/@ibrahimlawal/developing-with-multiple-github-accounts-on-one-macbook-94ff6d4ab9ca) - how to setup multiple github accounts on Mac
