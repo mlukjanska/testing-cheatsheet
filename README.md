@@ -5,6 +5,7 @@
 ## Content
 
 - [Software](#software)
+- [Scripts](#scripts)
 - [Blogs](#blogs)
 - [Useful Resources](#useful-resources)
 - [Others](#Others)
@@ -36,6 +37,12 @@
 
 - [Colour Blindness Simulator](https://altreus.github.io/colourblind/) - Simulate all types of Colour Blindness instantly!
 - [Yslow](http://yslow.org/) - Analyse why web pages are slow based on Yahoo!'s rules for performance.
+
+## Scripts
+
+Collection of useful scripts:
+
+- [Python script to compare CSV files for differences](https://github.com/mlukjanska/testing-cheatsheet/Scripts/compareCSV.py)
 
 ## Blogs
 
