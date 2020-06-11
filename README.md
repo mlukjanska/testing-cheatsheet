@@ -6,6 +6,7 @@
 
 - [Software](#software)
 - [Scripts](#scripts)
+- [CI](#ci)
 - [Blogs](#blogs)
 - [Useful Resources](#useful-resources)
 - [Others](#Others)
@@ -42,7 +43,15 @@
 
 Collection of useful scripts:
 
-- [compareCSV.py](compareCSV.py) - Python script to compare CSV files for differences
+- [compareCSV.py](Scripts/compareCSV.py) - Python script to compare CSV files for differences
+
+## Continuous Integration
+
+### CircleCI
+
+### Github
+
+- [Multiple github accounts on Mac](https://medium.com/@ibrahimlawal/developing-with-multiple-github-accounts-on-one-macbook-94ff6d4ab9ca) - how to setup multiple github accounts on Mac
 
 ## Blogs
 
