@@ -15,17 +15,17 @@ Tip: use delimiter in the `<sed>` command '|' in case you need also to replace U
 
 Example of the circleci command:
 
-`<{%CIRCLECI_ACCEPTANCE_USERNAME%}>` - this value will be replaces (it will be in the file)
-`<${ACCEPTANCE_USERNAME}>` - this is the CircleCI environment variable name and when running CircleCI build this will be replaced by the environment variable value.
+- `<{%CIRCLECI_ACCEPTANCE_USERNAME%}>` - this value will be replaces (it will be in the file)
+- `<${ACCEPTANCE_USERNAME}>` - this is the CircleCI environment variable name and when running CircleCI build this will be replaced by the environment variable value.
 
 ```yml
-    configure_acceptance_suite:
-        description: "Configure Acceptance test suite"
-        steps:
-            - run:
-                name: "Configure acceptance tests for circleci"
-                command: |
-                    sed -i "s|{%CIRCLECI_ACCEPTANCE_USERNAME%}|${ACCEPTANCE_USERNAME}|g" tests/acceptance.suite.circleci.yml
+configure_acceptance_suite:
+    description: "Configure Acceptance test suite"
+    steps:
+        - run:
+            name: "Configure acceptance tests for circleci"
+            command: |
+                sed -i "s|{%CIRCLECI_ACCEPTANCE_USERNAME%}|${ACCEPTANCE_USERNAME}|g" tests/acceptance.suite.circleci.yml
 ```
 
 ## Split tests by timings for parallel run
@@ -50,8 +50,8 @@ Incorrect:
 In order to fix it you can clean up the file before using circleci `<store_test_results>`, also make sure to use `<when: always>`, in case the test run command fails since CircleCI does not execute the rest of the commands in the job.
 
 ```yml
-      - run:
-          name: "Clean up the absolute paths from the test report"
-          command: sed -i 's/\/root\/project\///g' tests/_output/integration/result${CIRCLE_NODE_INDEX}.xml
-          when: always
+- run:
+    name: "Clean up the absolute paths from the test report"
+    command: sed -i 's/\/root\/project\///g' tests/_output/integration/result${CIRCLE_NODE_INDEX}.xml
+    when: always
 ```
