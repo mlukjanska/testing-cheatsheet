@@ -39,9 +39,8 @@ Various sources and articles about and around testing strategy (testing pyramid,
 
 ## Test heuristics and checklists
 
-- [Test heuristics cheat sheet](http://testobsessed.com/wp-content/uploads/2011/04/testheuristicscheatsheetv1.pdf) or [here](Heuristics/testheuristicscheatsheetv1.pdf) - Data type attacks, WEB tests, testing wisdom and frameworks
-- [Software testing pyramid with notes](https://archive.openconcept.ca/sites/openconcept/files/software_testing_cheat_sheet.pdf) or [here](Heuristics/software_testing_cheat_sheet.pdf)
--
+- [Test heuristics cheat sheet](http://testobsessed.com/wp-content/uploads/2011/04/testheuristicscheatsheetv1.pdf), [PDF in this repo](Heuristics/testheuristicscheatsheetv1.pdf) - Data type attacks, WEB tests, testing wisdom and frameworks
+- [Software testing pyramid](https://archive.openconcept.ca/sites/openconcept/files/software_testing_cheat_sheet.pdf), [PDF in this repo](Heuristics/software_testing_cheat_sheet.pdf)
 
 ## Tools
 
@@ -149,7 +148,7 @@ Good articles describing consumer driven contracts in details:
 
 Tools:
 - [Pact](https://docs.pact.io/)
-- [Postman](https://www.postman.com/collection/)
+- [Postman Collections](https://www.postman.com/collection/)
 
 
 ### Handy tools to make tester's life easier
