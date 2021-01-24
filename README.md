@@ -4,19 +4,44 @@
 
 ## Content
 
+- [Testing stratregy](#testing-strategy)
+- [Test heuristics and checklists](#test-heuristics-and-checklists)
 - [Tools](#tools)
   - [Functional automated testing](#functional-automated-testing)
+    - [Web](#web)
+    - [Mobile](#mobile)
   - [Visual and Content testing](#visual-and-content-testing)
   - [Performance testing](#performance-testing)
     - [Server side](#server-side)
     - [Client side](#client-side)
   - [Security testing](#security-testing)
+  - [Usability testing](#usability-testing)
+    - [Accessibility testing](#accessibility-testing)
+  - [Contract testing](#contract-testing)
+  - [Handy tools to make tester's life easier](#handy-tools-to-make-testers-life-easier)
+    - [Email services](#email-services)
+    - [Forms](#forms)
+    - [Screenshots and recording](#screenshots-and-recording)
+    - [CLI](#cli)
+    - [Utilities](#utilities)
+  - [Test reporting tools](#test-reporting-tools)
 - [Scripts](#scripts)
 - [Continuous Integration](#continuous-integration)
 - [Blogs](#blogs)
 - [Useful Resources](#useful-resources)
 - [Communities and Conferences](#communities-and-conferences)
 - [Articles](#Articles)
+
+## Testing strategy
+Various sources and articles about and around testing strategy (testing pyramid, testing types and other considerations)
+
+- [Software Testing Guide (Martin Fowler)](https://martinfowler.com/testing/)
+
+## Test heuristics and checklists
+
+- [Test heuristics cheat sheet](http://testobsessed.com/wp-content/uploads/2011/04/testheuristicscheatsheetv1.pdf) or [here](Heuristics/testheuristicscheatsheetv1.pdf) - Data type attacks, WEB tests, testing wisdom and frameworks
+- [Software testing pyramid with notes](https://archive.openconcept.ca/sites/openconcept/files/software_testing_cheat_sheet.pdf) or [here](Heuristics/software_testing_cheat_sheet.pdf)
+-
 
 ## Tools
 
@@ -96,6 +121,10 @@
 
 ### Security testing
 
+#### Checklists and how-tos
+- [Cheatsheet God](https://github.com/OlivierLaflamme/Cheatsheet-God) - a collection of resources, scripts and easy to follow how-to's for OSCP and general penetration testing.
+
+#### Tools
 - [Tracy](https://github.com/nccgroup/tracy) - A pentesting tool designed to assist with finding all sinks and sources of a web application and display these results in a digestible manner.
 - [Burp Suite](https://portswigger.net/burp/communitydownload) - Burp Suite Community Edition is a feature-limited set of manual tools for exploring web security. Proxy your HTTPS traffic, edit and repeat requests, decode data, and more.
 - [Requestly](https://requestly.io/) - Setup redirects, modify headers, switch hosts, insert user scripts, cancel requests and much more.
@@ -104,7 +133,37 @@
 - [OWASP ZAP](https://github.com/zaproxy/zaproxy) - This intercepting proxy allows you to see all HTTP traffic and manipulate it in real time. Easy to scan, catalog and exploit security issues.
 - [Cookie Inspector](https://chrome.google.com/webstore/detail/cookie-inspector/jgbbilmfbammlbbhmmgaagdkbkepnijn) - View and Edit Cookies easily using the developer tools pane.
 
+### Usability testing
+
+#### Accessibility testing
+Ensure that the application being tested is usable by people with disabilities like hearing, color blindness, old age and other disadvantaged groups
+
+- [Colour Blindness Simulator](https://altreus.github.io/colourblind/) - Simulate all types of Colour Blindness instantly!
+
+### Contract Testing
+Ensure that services (an API provider, a client etc) can communicate with each other.
+
+Good articles describing consumer driven contracts in details: 
+- [Consumer-Driven Contracts: A Service Evolution Pattern](https://martinfowler.com/articles/consumerDrivenContracts.html)
+- [Contract test](https://martinfowler.com/bliki/ContractTest.html)
+
+Tools:
+- [Pact](https://docs.pact.io/)
+- [Postman](https://www.postman.com/collection/)
+
+
 ### Handy tools to make tester's life easier
+
+#### Email services
+Sometimes for end to end testing we need to use email services and be able to access those programatically ie create email account and read emails. The following services can be considered depending on the user cases (for full services review read this [article](https://medium.com/koahealth/why-you-shouldnt-use-guerrillamail-for-automated-e2e-testing-use-mailslurp-instead-a73f16240444)):
+
+- [MailSlurp](https://www.mailslurp.com/) - probably the best suited for testing
+- [Mailosaur](https://mailosaur.com/) - probably the best suited for testing
+- [Mailinator](https://www.mailinator.com/v4/pricing.jsp)
+- [Gmail API](https://developers.google.com/gmail/api/guides)
+- [MessageBird](https://www.messagebird.com/en/pricing)
+- [Mailgun](https://mailgun.com/)
+
 
 #### Forms
 
@@ -129,9 +188,12 @@
 - [Xmind](http://www.xmind.net/) - The free mindmapping tool for documenting your tests.
 - [Cookie Inspector](https://chrome.google.com/webstore/detail/cookie-inspector/jgbbilmfbammlbbhmmgaagdkbkepnijn) - View and Edit Cookies easily using the developer tools pane.
 
-### Accessibility
+## Test reporting tools
 
-- [Colour Blindness Simulator](https://altreus.github.io/colourblind/) - Simulate all types of Colour Blindness instantly!
+- [Reportportal.io](https://reportportal.io/) - AI-powered test automation dashboard
+- [Allure](http://allure.qatools.ru/) - multi-language test report tool with graphical test results representations
+- [Dashing.io](http://dashing.io/) - dashboard framework, so you'll need to implement visualizations yourself
+
 
 ## Scripts
 
